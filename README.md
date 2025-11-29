@@ -1,24 +1,31 @@
-# AI Agent Project – Weather Monitoring Agent
+## How to Run
+1. Clone the repository:
 
-## Overview
-This project implements an autonomous AI Agent that performs a continuous task:
-It fetches real-time weather data from a public API, summarizes it, and logs the
-summary to a text file.
+```bash
+git clone https://github.com/Sbeveren/ai-weather-agent.git
+cd ai-weather-agent
+```
 
-The agent follows the classical:
-**Sense → Think → Act** architecture.
+2. Install dependencies:
 
----
+```bash
+pip install -r requirements.txt
+```
 
-## Project Structure
-├── agent/
-│ ├── init.py
-│ ├── weather_agent.py
-│ ├── config.py
-│
-├── logs/
-│ └── weather_log.txt
-│
-├── main.py
-├── requirements.txt
-└── README.md
+3. Create a .env file in the project root:
+
+```bash
+WEATHER_API_KEY=your_actual_api_key_here
+```
+
+4. Run the agent:
+
+```bash
+python main.py
+```
+
+The agent will log weather summaries to logs/weather_log.txt.
+
+### Notes:
+- Make sure your terminal/editor supports UTF-8 to correctly display the ° symbol.
+- The logs folder and .env are ignored in Git via .gitignore to protect sensitive information and runtime files.
