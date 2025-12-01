@@ -18,6 +18,8 @@ pip install -r requirements.txt
 WEATHER_API_KEY=your_actual_api_key_here
 ```
 
+The API key used for this project is located in the Documentation.
+
 4. Run the agent:
 
 ```bash
